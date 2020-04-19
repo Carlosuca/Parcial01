@@ -36,7 +36,7 @@ public class Main {
                 case 2:
                     String eliminarA;
 
-                    System.out.print("Nombre del Empleado: "); eliminarA = in.nextLine();
+                    System.out.print("Nombre del Empleado que va a despedir :(: "); eliminarA = in.nextLine();
                     empleados.removeIf(s-> s.getNombre().equalsIgnoreCase(eliminarA));
                     break;
                 case 3:
