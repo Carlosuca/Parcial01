@@ -3,12 +3,13 @@ package com.CMPP.x00202118;
 import java.util.List;
 
 public class Empresa extends Empleado {
+
     private String nombre;
     private List<Empleado> planilla;
 
 
-    public Empresa(String nombre, String puesto, double salario) {
-        super(nombre, puesto, salario);
+    public Empresa(String nombre, String puesto,String docu, double salario) {
+        super(nombre, puesto,docu, salario);
     }
 
     @Override
@@ -22,11 +23,11 @@ public class Empresa extends Empleado {
     //metodos
     public void addEmpleado(String Empleado){
 
-
         return;
     }
     public void quitEmpleado(String Empleado){
         return;
+
     }
 
     @Override

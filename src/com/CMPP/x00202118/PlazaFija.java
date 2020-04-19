@@ -3,8 +3,8 @@ package com.CMPP.x00202118;
 public class PlazaFija extends Empleado {
     private int extension;
 
-    public PlazaFija(String nombre, String puesto, double salario, int extension) {
-        super(nombre, puesto, salario);
+    public PlazaFija(String nombre, String puesto,String docu, double salario, int extension) {
+        super(nombre, puesto,docu, salario);
         this.extension = extension;
     }
 

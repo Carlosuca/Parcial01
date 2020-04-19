@@ -1,18 +1,24 @@
 package com.CMPP.x00202118;
 
-import java.util.ArrayList;
-
-public abstract class Empleado {
+public class Empleado {
     private String nombre;
     private String puesto;
-    private ArrayList<Documento> documentos;
+    private String docu;
     private double salario;
 
-    public Empleado(String nombre, String puesto, double salario) {
+    public Empleado(String nombre, String puesto, String docu, double salario) {
         this.nombre = nombre;
         this.puesto = puesto;
         this.salario = salario;
-        documentos = new ArrayList<>();
+        this.docu = docu;
+
+    }
+
+    public Empleado(String nombre, String puesto, double salario, String docu) {
+        this.nombre = nombre;
+        this.puesto = puesto;
+        this.salario = salario;
+        this.docu = docu;
     }
 
     public String getNombre() {
@@ -23,21 +29,15 @@ public abstract class Empleado {
         return puesto;
     }
 
-    public ArrayList<Documento> getDocumentos() {
-
-        return documentos;
+    public String getDocu() {
+        return docu;
     }
 
     public void addDocumento(String Documento){
-        String nombre = (" nombre: " + getNombre());
-        String puesto = (" puesto: " + getPuesto());
-        double salario = Double.parseDouble(("salario:  " + getSalario()));
-
-
-
+        return;
 
     }
-    public  void removeDocuemento(String Docuemnto){
+    public  void removeDocuemento(String Documento){
         return;
     }
 
@@ -54,7 +54,7 @@ public abstract class Empleado {
         return "Empleado{" +
                 "nombre='" + nombre + '\'' +
                 ", puesto='" + puesto + '\'' +
-                ", documentos=" + documentos +
+                ", documento=" + docu +
                 ", salario=" + salario +
                 '}';
     }

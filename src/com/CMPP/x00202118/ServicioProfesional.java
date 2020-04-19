@@ -3,8 +3,8 @@ package com.CMPP.x00202118;
 public class ServicioProfesional extends Empleado {
     private int mesesContrato;
 
-    public ServicioProfesional(String nombre, String puesto, double salario, int mesesContrato) {
-        super(nombre, puesto, salario);
+    public ServicioProfesional(String nombre, String puesto,String docu, double salario, int mesesContrato) {
+        super(nombre, puesto,docu, salario);
         this.mesesContrato = mesesContrato;
     }
 
